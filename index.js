@@ -2,6 +2,7 @@ const main = document.getElementById('main')
 const factBox = document.getElementById('fact-box')
 const factBoxText = document.getElementById('fact-box-text')
 const btn = document.getElementById('btn')
+const speachBtn = document.getElementById('speach-btn')
 
 const mushieArr = ["Fungi Are Genetically Closer to Humans Than Plants. In the past, scientists considered fungi to be plants, but now we know better. Discoveries show that fungi are more closely related to animals, including humans, than to plants.",
 "The largest living organism on the planet is a single honey mushroom (Armillaria ostoyae) in the Malheur National Forest, Oregon, USA. It’s around 3.5 miles (5.6 km ) wide, occupies an area of 965 hectares (2,385 acres), and is at least 2,400 years old. But could be much older.",
@@ -54,8 +55,21 @@ function newFact(mushieArr){
     let image = photoArr[randBackG]
     main.style.backgroundImage= `url(${image})`;
     photoArr.splice(randBackG, 1)
-
     }
+
+    function textToSpeech(text){
+        // console.log(factBoxText.innerHTML)
+        // let utternance = new SpeechSynthesisUtterance(text)
+        // speechSynthesis.speak(utternance)
+        
+    }
+
+    
+    speachBtn.addEventListener('click', e =>{
+        // textToSpeech(factBoxText.innerHTML)
+        let utterance = new SpeechSynthesisUtterance("Hello world!");
+speechSynthesis.speak(utterance);
+    })
 
 
 
