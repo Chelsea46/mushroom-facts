@@ -34,7 +34,7 @@ main{
     background-image: url('https://images.unsplash.com/photo-1550824730-05ededc35e7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80');
 }
 
-button{
+.button{
     cursor: pointer;
     background-color: white;
     padding: 1em;
@@ -46,4 +46,27 @@ button{
 }
 .button:hover{
     box-shadow: 2px 1px 3px;
+}
+
+.replay-btn{
+    cursor: pointer;
+    background-color: white;
+    padding: 1em;
+    border-radius: 2em;
+    opacity: 0.9;
+    color: #C16632;
+    box-shadow: 5px 3px 6px;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.speach-btn{
+    cursor: pointer;
+    background-color: white;
+    padding: .5em;
+    border-radius: 2em;
+    opacity: 0.9;
+    color: #C16632;
+    box-shadow: 5px 3px 6px;
+    font-size: 1.1rem;
 }
